@@ -23,6 +23,7 @@ jobs:
       - name: Add ubuntu gradle dependencies
         run: |
           curl -s "https://get.sdkman.io" | bash
+          source "/home/runner/.sdkman/bin/sdkman-init.sh"
           sdk install gradle
 
       - name: Setup Gradle

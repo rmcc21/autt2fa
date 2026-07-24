@@ -21,7 +21,9 @@ jobs:
           java-version: '17'
       
       - name: Add ubuntu gradle dependencies
-        run: sudo apt-get install gradle
+        run: |
+          curl -s "https://get.sdkman.io" | bash
+          sdk install gradle
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3

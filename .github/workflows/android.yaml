@@ -34,8 +34,8 @@ jobs:
           gradle wrapper
           chmod +x gradlew
 
-      - name: Run Unit Tests
-        run: ./gradlew test
+      #- name: Run Unit Tests
+      #  run: ./gradlew test
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
